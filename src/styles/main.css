@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply m-0 font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+    @apply bg-gray-900 text-gray-100;
+}
+
+/* Исправление конфликтов Ant Design и Tailwind */
+.ant-btn {
+    @apply shadow-none;
+}
+
+.ant-menu {
+    @apply shadow-none border-none;
+}
